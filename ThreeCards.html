@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/ThreeCards.css">
+</head>
+<body onload="hiddenInfo(true)">
+<div class="namegame"><h1><i>Trò chơi dân gian: 3 lá bán nhà</i></h1></div>
+
+<button id="distribute" role="button"><span class="text"><b>CHIA BÀI</b></span></button>
+<button id="createname" onclick="createName()">Nhập tên người chơi</button>
+
+<div id="playerinfo1">
+    <div id="playermoney1">1234</div>
+</div>
+<div id="playerinfo2">
+    <div id="playermoney2">1234</div>
+    <input type="number" id="moneybet2" placeholder="Số tiền cược">
+    <button id="submit2" onclick="bet(2)">Đặt cược</button>
+    <div id="allmoneybet2"></div>
+</div>
+<div id="playerinfo3">
+    <div id="playermoney3">1234</div>
+    <input type="number" id="moneybet3" placeholder="Số tiền cược">
+    <button id="submit3" onclick="bet(3)">Đặt cược</button>
+    <div id="allmoneybet3"></div>
+</div>
+<div id="playerinfo4">
+    <div id="playermoney4">1234</div>
+    <input type="number" id="moneybet4" placeholder="Số tiền cược">
+    <button id="submit4" onclick="bet(4)">Đặt cược</button>
+    <div id="allmoneybet4"></div>
+</div>
+
+<div id="player1" onclick="show1()"></div>
+<div id="player2" onclick="show2()"></div>
+<div id="player3" onclick="show3()"></div>
+<div id="player4" onclick="show4()"></div>
+
+
+<script src="JS/Card.js"></script>
+<script src="JS/Deck.js"></script>
+<script src="JS/Player.js"></script>
+<script src="JS/Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+body {
+    background-image: url("../background/solo.jpeg");
+    background-size: 100%;
+}
+
+#player1 {
+    position: fixed;
+    top: 10%;
+    left: 40%;
+}
+
+#player2 {
+    position: fixed;
+    left: 15%;
+    top: 39%;
+}
+
+#player3 {
+    position: fixed;
+    right: 15%;
+    top: 39%;
+}
+
+#player4 {
+    position: fixed;
+    bottom: 15%;
+    left: 40%;
+}
+
+.namegame {
+    color: #FF013C;
+    font-family: AkayaKanadaka;
+    font-size: x-large;
+    position: fixed;
+    left: 30%;
+    top: -1%;
+}
+
+
+#distribute {
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    position: fixed;
+    top: 44%;
+    left: 44%;
+}
+
+#distribute:active,
+#distribute:hover {
+    outline: 0;
+}
+
+#distribute span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#distribute:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    #distribute {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+#createname,
+#createname:after {
+    width: 150px;
+    height: 76px;
+    line-height: 78px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    etter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: fixed;
+    top: 10%;
+    left: 1%;
+}
+
+#createname:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+
+    content: 'Nhap ten nguoi choi';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+#createname:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+
+@media (min-width: 768px) {
+    #createname,
+    #createname:after {
+        width: 200px;
+        height: 86px;
+        line-height: 88px;
+    }
+}
+
+#playerinfo1 {
+    position: fixed;
+    top: 32.5%;
+    left: 43%;
+}
+
+#playerinfo4 {
+    position: fixed;
+    bottom: 9%;
+    left: 43%;
+}
+
+#playerinfo2 {
+    position: fixed;
+    top: 60.7%;
+    left: 18%;
+}
+
+#playerinfo3 {
+    position: fixed;
+    top: 60.7%;
+    right: 18%;
+}
+
+#playermoney1 {
+    background-color: wheat;
+    position: fixed;
+    top: 29%;
+    left: 43%;
+    width: 12.5%;
+    text-align: center;
+    border-radius: 50%;
+    height: 26px;
+}
+
+#playermoney2 {
+    background-color: wheat;
+    position: fixed;
+    top: 57.7%;
+    left: 18%;
+    width: 12.5%;
+    text-align: center;
+    border-radius: 50%;
+    height: 25px;
+}
+
+#playermoney3 {
+    background-color: wheat;
+    position: fixed;
+    top: 57.7%;
+    right: 18%;
+    width: 12.5%;
+    text-align: center;
+    border-radius: 50%;
+    height: 25px;
+}
+
+#playermoney4 {
+    background-color: wheat;
+    position: fixed;
+    bottom: 12.3%;
+    left: 43%;
+    width: 12.5%;
+    text-align: center;
+    border-radius: 50%;
+    height: 25px;
+}
+
+#allmoneybet1 {
+    background-color: pink;
+    position: fixed;
+    top: 36%;
+    left: 43%;
+    width: 12.5%;
+    text-align: center;
+
+}
+
+#allmoneybet2 {
+    background-color: pink;
+    position: fixed;
+    top: 64%;
+    left: 18%;
+    width: 12.5%;
+    text-align: center;
+
+}
+
+#allmoneybet3 {
+    background-color: pink;
+    position: fixed;
+    top: 64%;
+    right: 18%;
+    width: 12.5%;
+    text-align: center;
+
+}
+
+#allmoneybet4 {
+    background-color: pink;
+    position: fixed;
+    bottom: 6%;
+    left: 43%;
+    width: 12.5%;
+    text-align: center;
+
+}
+
+#moneybet2 {
+    height: 25px;
+}
+
+#submit2 {
+    height: 30px;
+}
+
+#moneybet3 {
+    height: 25px;
+}
+
+#submit3 {
+    height: 30px;
+}
+
+#moneybet4 {
+    height: 25px;
+}
+
+#submit4 {
+    height: 30px;
+}
